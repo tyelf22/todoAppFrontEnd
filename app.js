@@ -94,7 +94,9 @@ const addNewTodo = async () => {
         category: todoCategory
     }
 
-    const rawResponse = await fetch('http://localhost:3000/todos', {
+    console.log(newTodo)
+
+    const rawResponse = await fetch(url, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
