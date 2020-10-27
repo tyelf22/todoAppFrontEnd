@@ -1,0 +1,22 @@
+[
+	{
+		"todo": "Buy Milk",
+		"complete": "false",
+		"category": "Grocery"
+	},
+	{
+		"todo": "Clean the cat box",
+		"complete": "false",
+		"category": "House"
+	},
+	{
+		"todo": "Chips and salsa",
+		"complete": "false",
+		"category": "Grocery"
+	},
+	{
+		"todo": "Finish Homework for DGM 3760",
+		"complete": "false",
+		"category": "School"
+	}
+]

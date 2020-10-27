@@ -29,7 +29,7 @@ li{
 }
 
 input {
-    height: 30px;
+    height: 40px;
     position: relative;
     border: 2px solid #cdcdcd;
     border-color: rgba(0, 0, 0, .14);
@@ -51,6 +51,7 @@ input {
     cursor: pointer;
     font-size: 20px;
     margin-bottom: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .deleteBtn {
@@ -62,6 +63,18 @@ input {
    padding: 8px;
    cursor: pointer;
 
+}
+
+#addBtn {
+    height: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
 }
 
 .showTodos {
@@ -77,7 +90,7 @@ input {
 }
 
 .showTodos p {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     cursor: pointer;
 }
@@ -88,4 +101,12 @@ input {
 
 .showTodos .trash:hover {
     color: red;
+}
+
+.hideEl{
+    visibility: hidden;
+}
+
+.showEl{
+    visibility: visible;
 }
