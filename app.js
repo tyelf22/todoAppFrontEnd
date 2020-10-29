@@ -85,9 +85,10 @@ addBtn.addEventListener('click', () => {
 
 //Add new todo function
 const addNewTodo = async () => {
+    console.log('in addNewTodo')
     let todoTitle = document.querySelector("#todoInput").value
     let todoCategory = document.querySelector("#categoryInput").value
-    console.log(todoTitle)
+
     let newTodo = {
         todo: todoTitle,
         complete: false,
@@ -95,7 +96,6 @@ const addNewTodo = async () => {
     }
 
     console.log(newTodo)
-
     const rawResponse = await fetch(url, {
         method: 'POST',
         headers: {
@@ -106,10 +106,9 @@ const addNewTodo = async () => {
     });
     const content = await rawResponse.json();
 
-    console.log(content);
-
+    console.log(content)
     if (content) {
-        retrieveAll()
+        //retrieveAll()
     }
 
 }
@@ -120,7 +119,6 @@ const getTodo = (id) => {
     fetch(`${url}/${id}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data.complete)
         completeTodo(data)
     })
 }
