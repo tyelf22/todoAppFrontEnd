@@ -1,5 +1,5 @@
 console.log('connected to app.js')
-const url = "http://localhost:3000/todos"
+const url = "https://te-todo-backend.herokuapp.com/todos"
 
 
 //Display all todos
