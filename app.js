@@ -99,7 +99,6 @@ const addNewTodo = async () => {
     const rawResponse = await fetch(url, {
         method: 'POST',
         headers: {
-            'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(newTodo)
@@ -108,7 +107,7 @@ const addNewTodo = async () => {
 
     console.log(content)
     if (content) {
-        //retrieveAll()
+        retrieveAll()
     }
 
 }
